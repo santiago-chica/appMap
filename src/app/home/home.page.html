@@ -7,11 +7,14 @@
 </ion-header>
 
 <ion-content>
-  <div class="map" id="map">
 
+  <div>
+    <ion-button expand="block" (click)="addCurrentLocation()">Agregar mi ubicación</ion-button>
+    <ion-button expand="block" (click)="renderRoute()">Obtener ruta</ion-button>
+    <ion-button expand="block" (click)="reset()">Reiniciar puntos</ion-button>
   </div>
 
-  <ion-button (click)="getPoint()">
-    Localizar
-  </ion-button>
+  <h2>Puntos agregados: {{ getCount() }}</h2>
+
+  <div class="map" id="map">  </div>
 </ion-content>

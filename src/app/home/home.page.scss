@@ -1,4 +1,31 @@
+ion-content {
+  --background: #f4f5f8;
+}
+
+div:first-child {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+ion-button {
+  --border-radius: 14px;
+  font-weight: 600;
+  text-transform: none;
+  height: 48px;
+}
+
 .map {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 220px);
+  margin-top: 8px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  background: #dfe6e9;
+}
+
+h2 {
+  text-align: center;
 }
